@@ -1,0 +1,52 @@
+{
+  "a1_homework": {
+    "duration": 20,
+    "fps": 30,
+    "w": 1080,
+    "h": 1920,
+    "brand": "Omnica English",
+    "cues": [
+      { "start": 0.0, "end": 2.6, "text": "Домашнее задание никто не проверяет.", "label": null, "shot": "sally", "spoken_en": "You do the homework. Nobody checks it." },
+      { "start": 2.6, "end": 6.0, "text": "Здесь преподаватель смотрит каждый ваш ответ.", "label": null, "shot": "sally", "spoken_en": "Here, I check every answer." },
+      { "start": 6.0, "end": 9.4, "text": "Задание приходит в личный кабинет, а не в чат.", "label": "ДОМАШНЕЕ ЗАДАНИЕ", "shot": "screen" },
+      { "start": 9.4, "end": 12.8, "text": "Вы отвечаете — преподаватель открывает ваш ответ.", "label": "ПРОВЕРКА", "shot": "screen" },
+      { "start": 12.8, "end": 15.8, "text": "Под каждым ответом — комментарий. И оценка.", "label": "ОБРАТНАЯ СВЯЗЬ", "shot": "screen" },
+      { "start": 15.8, "end": 18.0, "text": "Пробный урок Omnica English — 1 500 ₸. Ссылка в профиле.", "label": "ПРОБНЫЙ УРОК", "shot": "sally" }
+    ],
+    "endcard": { "start": 18.0, "end": 20.0, "headline": "Omnica English", "sub": "Записаться на пробный урок" }
+  },
+
+  "a2_after_lesson": {
+    "duration": 20,
+    "fps": 30,
+    "w": 1080,
+    "h": 1920,
+    "brand": "Omnica English",
+    "cues": [
+      { "start": 0.0, "end": 2.6, "text": "Что остаётся после урока английского?", "label": null, "shot": "sally", "spoken_en": "What's left after your lesson?" },
+      { "start": 2.6, "end": 6.0, "text": "Конспект. И короткий тест по уроку.", "label": null, "shot": "sally", "spoken_en": "A summary. And a short quiz." },
+      { "start": 6.0, "end": 9.4, "text": "На странице занятия — конспект: о чём говорили.", "label": "КОНСПЕКТ УРОКА", "shot": "screen" },
+      { "start": 9.4, "end": 12.8, "text": "Ниже — слова урока и карточки. Выписывать не нужно.", "label": "СЛОВА УРОКА", "shot": "screen" },
+      { "start": 12.8, "end": 15.8, "text": "И короткий тест. Сразу видно, что осталось в памяти.", "label": "САМОПРОВЕРКА", "shot": "screen" },
+      { "start": 15.8, "end": 18.0, "text": "Пробный урок Omnica English — 1 500 ₸. Ссылка в профиле.", "label": "ПРОБНЫЙ УРОК", "shot": "sally" }
+    ],
+    "endcard": { "start": 18.0, "end": 20.0, "headline": "Omnica English", "sub": "Записаться на пробный урок" }
+  },
+
+  "a3_repetition": {
+    "duration": 20,
+    "fps": 30,
+    "w": 1080,
+    "h": 1920,
+    "brand": "Omnica English",
+    "cues": [
+      { "start": 0.0, "end": 2.6, "text": "Слова забываются. У меня тоже.", "label": null, "shot": "sally", "spoken_en": "I forget words too." },
+      { "start": 2.6, "end": 6.0, "text": "Поэтому платформа возвращает их сама.", "label": null, "shot": "sally", "spoken_en": "So the system brings them back." },
+      { "start": 6.0, "end": 9.4, "text": "Слово с урока становится карточкой. Автоматически.", "label": "КАРТОЧКИ", "shot": "screen" },
+      { "start": 9.4, "end": 12.8, "text": "Каждый день — короткая очередь на повторение.", "label": "ПОВТОРЕНИЕ", "shot": "screen" },
+      { "start": 12.8, "end": 15.8, "text": "До 15 новых слов в день. Остальное — то, что вы уже учили.", "label": "РАСПИСАНИЕ", "shot": "screen" },
+      { "start": 15.8, "end": 18.0, "text": "Пробный урок Omnica English — 1 500 ₸. Ссылка в профиле.", "label": "ПРОБНЫЙ УРОК", "shot": "sally" }
+    ],
+    "endcard": { "start": 18.0, "end": 20.0, "headline": "Omnica English", "sub": "Записаться на пробный урок" }
+  }
+}
