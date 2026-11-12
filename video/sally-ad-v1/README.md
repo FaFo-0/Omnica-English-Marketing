@@ -18,7 +18,11 @@ The videos have their own (distant, quiet) sound, and the hand-held voice record
 
 Clock drift between the phones is ~3 ms per 8 min, so it can be ignored. `roughcut.py` re-checks the offset of every clip before cutting.
 
-## Rough cut v2 (current)
+## Rough cut v3 (current)
+
+`rough-cut-v3.mp4` (Drive): 46 s, 1080×1920, built by `tools/cut_v3.py` (shared helpers in `tools/cliplib.py`). Same takes as v2, which FaFo chose: the English hook is take 2 of "Did you learn words but never use them?", where she points at the camera. The pauses between lines are trimmed: each clip is cut where the hand-held voice actually starts and stops, with ~0.07 s of padding and never earlier than the last word Soniox transcribed. The finished cut was re-transcribed to check that no word is clipped. `tools/hooks.py` renders and measures all 11 English hook takes, numbered, for comparison.
+
+## Rough cut v2
 
 `rough-cut-v2.mp4` (Drive): 48 s, 1080×1920. It opens with the English hook "Did you learn words but never use them?" (20261110_162238, take 2), then the Russian script as in v1. FaFo confirmed the audio sync is good on v1. Each clip is zoomed to a 1440×2560 crop of the 4K frame, centred on Sally's face (`tools/faces.py` → `faces.json`, eyes at ~36% height).
 
