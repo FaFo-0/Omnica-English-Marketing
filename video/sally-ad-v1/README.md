@@ -18,6 +18,10 @@ The videos have their own (distant, quiet) sound, and the hand-held voice record
 
 Clock drift between the phones is ~3 ms per 8 min, so it can be ignored. `roughcut.py` re-checks the offset of every clip before cutting.
 
+## App screen recordings
+
+See `rec/README.md`. `screens-review.mp4` (Drive) has all 11 scenes with captions.
+
 ## Rough cut v5 (current)
 
 `rough-cut-v5.mp4` (Drive): same cut as v4 (`tools/cut_v5.py`), but with no noise reduction, because FaFo found v4 muffled. It uses a light presence EQ instead: −2 dB at 250 Hz, +3 dB at 3.5 kHz, +2 dB treble shelf at 8 kHz. The crossfades and levelling are unchanged. Sync is the same as v4 (within ±15 ms of the camera audio at every cut).

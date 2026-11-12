@@ -1,0 +1,10 @@
+{
+  "externalId": "omnica-demo-mountain-weekend",
+  "title": "A Weekend in the Mountains",
+  "kind": "story",
+  "levelCEFR": "A2",
+  "topicTags": ["travel", "nature"],
+  "author": "Omnica English",
+  "description": "A short original story about a trip to a mountain lake.",
+  "units": [ { "externalId": "the-lake", "title": "The lake", "contentFile": "mountain-weekend.md" } ]
+}

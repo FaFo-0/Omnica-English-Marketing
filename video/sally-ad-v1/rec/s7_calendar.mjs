@@ -1,0 +1,22 @@
+import { session, go } from './browse.mjs';
+import { startRec, swipe, tap } from './rec.mjs';
+const SC = '/tmp/claude-0/-home-user/f8c2bbaa-ba06-5d68-8076-37eff19a0f58/scratchpad/';
+const { browser, page } = await session('student');
+await go(page, '/student/calendar', 2500);
+const rec = await startRec(page, '/home/user/sally-ad/screens/s7_frames');
+await page.waitForTimeout(1200);
+await tap(page, page.getByRole('button', { name: 'Следующий период' }), 1800);
+rec.mark('day');
+await swipe(page, 380, { steps: 36 }); await page.waitForTimeout(1200);
+const slot = page.getByRole('button', { name: /18:00–18:30: Свободно/ }).first();
+await slot.scrollIntoViewIfNeeded(); await page.waitForTimeout(600);
+rec.mark('slot');
+await tap(page, slot, 1800);
+console.log('buttons:', (await page.getByRole('button').allInnerTexts()).filter(t => t && !/Свободно|Недоступно/.test(t)).join(' | '));
+await page.screenshot({ path: SC + 's7_mid.png' });
+const confirm = page.getByRole('button', { name: /Забронировать|Подтвердить|Записаться|Записать/ }).last();
+if (await confirm.count()) { rec.mark('confirm'); await tap(page, confirm, 3000); }
+rec.mark('end');
+await page.screenshot({ path: SC + 's7_end.png' });
+console.log(await rec.stop('/home/user/sally-ad/screens/s7_calendar.mp4'));
+await browser.close();
