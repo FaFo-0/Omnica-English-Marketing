@@ -16,6 +16,10 @@ The videos have their own (distant, quiet) sound, and the hand-held voice record
 
 Clock drift between the phones is ~3 ms per 8 min, so it can be ignored. `roughcut.py` re-checks the offset of every clip before cutting.
 
+## Rough cut v2 (current)
+
+`exports/rough-cut-v2.mp4`: 48 s, 1080×1920. It opens with the English hook "Did you learn words but never use them?" (20261110_162238, take 2), then the Russian script as in v1. FaFo confirmed the audio sync is good on v1. Each clip is zoomed to a 1440×2560 crop of the 4K frame, centred on Sally's face (`tools/faces.py` → `faces.json`, eyes at ~36% height).
+
 ## Rough cut v1
 
 `exports/rough-cut-v1.mp4`: 45 s, 720×1280, Sally only, hand-held audio. Best takes in PDF order, all from 20261110_170538 except the native-teachers line (20261110_171528). No screen inserts, subtitles or labels yet.
