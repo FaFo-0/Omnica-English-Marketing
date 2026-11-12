@@ -28,12 +28,21 @@ const Shot = ({ shot, dur }) => {
   </AbsoluteFill>;
 };
 
-const Screen = ({ beat, dur, sameLabel }) => {
+const Screen = ({ beat, dur }) => {
+  const f = useCurrentFrame();
+  const { fps } = useVideoConfig();
+  // Sally -> screen: the recording springs up over a purple field. Screen -> Sally: it drops away and she is revealed.
+  const enter = beat.enter ? spring({ frame: f, fps, config: { damping: 15, stiffness: 190, mass: 0.7 } }) : 1;
+  const out = beat.exit ? interpolate(f, [dur - 7, dur], [0, 1], { ...clamp, easing: Easing.in(Easing.cubic) }) : 0;
+  const bg = beat.enter ? interpolate(f, [0, 2, 12, 16], [1, 1, 1, 0], clamp) : 0;
   let at = 0;
   const shots = beat.shots.map(s => { const len = s.len ? fr(s.len) : dur - at; const row = { s, from: at, len }; at += len; return row; });
-  return <AbsoluteFill style={{ background: C }}>
-    {shots.map(({ s, from, len }, i) => <Sequence key={i} from={from} durationInFrames={len}><Shot shot={s} dur={len} /></Sequence>)}
-    <Label text={beat.label} still={sameLabel} />
+  return <AbsoluteFill>
+    <AbsoluteFill style={{ background: P, opacity: out > 0 ? 0 : bg }} />
+    <AbsoluteFill style={{ transform: `translateY(${(1 - enter) * 700 + out * 1920}px) scale(${0.82 + 0.18 * enter})`, borderRadius: (1 - Math.min(1, enter)) * 60, overflow: 'hidden', background: C }}>
+      {shots.map(({ s, from, len }, i) => <Sequence key={i} from={from} durationInFrames={len}><Shot shot={s} dur={len} /></Sequence>)}
+    </AbsoluteFill>
+    <div style={{ opacity: 1 - out }}><Label text={beat.label} still={!beat.enter && !beat.newLabel} /></div>
   </AbsoluteFill>;
 };
 
@@ -54,7 +63,7 @@ const Subs = ({ beat }) => {
   const pop = interpolate(local, [0, 5], [0.9, 1], { ...clamp, easing: Easing.out(Easing.back(2)) });
   const fade = interpolate(local, [0, 3], [0, 1], clamp);
   const big = beat.hook;
-  const pos = beat.subsTop ? { top: LABEL_TOP + 130 } : { bottom: 1920 - SUB_BOTTOM };
+  const pos = beat.subsTop ? { top: LABEL_TOP + 150 } : { bottom: 1920 - SUB_BOTTOM };
   return <div style={{ position: 'absolute', left: 70, right: 70, ...pos, display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 18 }}>
     {beat.en ? <div style={{ fontFamily: FONT, fontWeight: 700, fontSize: 42, lineHeight: 1.2, color: '#fff', textAlign: 'center', textShadow: '0 2px 4px rgba(0,0,0,0.9), 0 3px 18px rgba(0,0,0,0.9)', maxWidth: 900 }}>{beat.en}</div> : null}
     <div style={{ background: P, color: '#fff', fontFamily: FONT, fontWeight: 800, fontSize: big ? 68 : 60, lineHeight: 1.16, letterSpacing: -0.5, textAlign: 'center', padding: big ? '26px 38px 30px' : '22px 34px 26px', borderRadius: 26, boxShadow: `0 10px 0 ${PD}`, transform: `scale(${pop})`, opacity: fade, maxWidth: 940 }}>{subs[i].text}</div>
@@ -80,7 +89,7 @@ const End = ({ beat }) => {
 // Overlay only: transparent wherever Sally is on camera, so rough-cut v5's picture passes through untouched.
 const Overlay = () => <AbsoluteFill>
   {tl.beats.map((beat, i) => <Sequence key={beat.id} from={beat.from} durationInFrames={beat.dur}>
-    {beat.type === 'screen' ? <Screen beat={beat} dur={beat.dur} sameLabel={tl.beats[i - 1]?.label === beat.label} /> : null}
+    {beat.type === 'screen' ? <Screen beat={{ ...beat, newLabel: tl.beats[i - 1]?.label !== beat.label }} dur={beat.dur} /> : null}
     <Subs beat={beat} />
   </Sequence>)}
   <Sequence from={tl.end.from} durationInFrames={tl.end.dur}><End beat={tl.end} /></Sequence>

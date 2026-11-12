@@ -10,7 +10,9 @@ let w = 0;
 const beats = edit.beats.map((b, i) => {
   const from = fr(b.from), to = fr(edit.beats[i + 1]?.from ?? edit.end.at);
   const subs = b.subs.map(([text, n]) => { const s = { text, at: Math.max(0, fr(words[w][1]) - from - 2) }; w += n; return s; });
-  return { ...b, from, dur: to - from, subs };
+  const prev = edit.beats[i - 1], next = edit.beats[i + 1];
+  // pop in when cutting from Sally to a screen, drop away when cutting back to her
+  return { ...b, from, dur: to - from, subs, enter: b.type === 'screen' && prev?.type === 'sally', exit: b.type === 'screen' && next?.type === 'sally' };
 });
 if (w !== words.length) throw new Error(`subs cover ${w} words, v5 has ${words.length}`);
 const endFrom = fr(edit.end.at), endDur = Math.round(edit.end.dur * fps);
