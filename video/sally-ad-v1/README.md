@@ -18,6 +18,38 @@ The videos have their own (distant, quiet) sound, and the hand-held voice record
 
 Clock drift between the phones is ~3 ms per 8 min, so it can be ignored. `roughcut.py` re-checks the offset of every clip before cutting.
 
+## Pick up here (handoff for any AI)
+
+**Where things live**
+- **Google Drive folder** (https://drive.google.com/drive/folders/1E6SHzFrAHHQhtKylZ7BNtYCnwDfOZYBI):
+  - Raw footage: 5 videos plus `Voice 261110_162017.m4a`.
+  - `sally-ad-handoff.zip`, which contains:
+    - `screens/` — the 11 app screen recordings (`s0n_live` … `s7_calendar`, 1080×1920 except `s0n_live`, which is 1520×2000 and cropped to `560:996:0:0`), plus `*.marks.json` event timestamps.
+    - `screens/screens-review.mp4` and `screens/rough-cut-v5.mp4`.
+    - `transcripts/` — Soniox JSON for every video.
+    - `audio/live/` — Sally's live-room audio and its Soniox transcription.
+  - Rough cuts v1–v5 and the review video, which were also sent in chat.
+- **This repo** (`video/sally-ad-v1/`): every script (`tools/`, `rec/`), the demo library story (`library/`) and these notes.
+- **App repo** (`FaFo-0/omnica-english`): `convex/qaDemo.ts` (dev-only demo lesson + QA actor renaming).
+
+**Rebuild from scratch:** download the Drive files into `raw/` (videos, and the voice file as `raw/voice_20261110_162017.m4a`), then run `tools/cut_v5.py` → rough cut v5. Offsets and the timing quirks are documented below.
+
+**Dev state to undo when the ad is final:** the QA teacher and Russian QA student are renamed "Sally" / "Анна" with `locale: 'ru'`. Restore them to "QA Teacher" (en) and "QA Student Russian" (ru) with `qaDemo:setActorNames`.
+
+**Next step (agreed with FaFo, not started):** build the full ad on rough cut v5.
+- Sally full screen for the hooks, the teachers line and the WhatsApp ending.
+- App screens under the other lines, with Sally in a round window (lip sync visible):
+  - lesson start → `s0n_live`
+  - after the call → `s1`/`s3` (mistakes, words)
+  - repetition → `s4`
+  - library → `s5`
+  - homework → `s6b`/`s6d` (+ `s6a` AI homework)
+  - schedule → `s7` (end on «Урок забронирован»)
+- Russian subtitles and yellow section labels clear of the Reels UI zones (bottom ~26%, right ~11%).
+- Alternate normal/closer zoom on Sally cuts.
+- WhatsApp end card. Music is added in Instagram, not in the file.
+- Teachers subtitle: «…с носителями языка и другими иностранными преподавателями».
+
 ## App screen recordings
 
 See `rec/README.md`. `screens-review.mp4` (Drive) has all 11 scenes with captions.
