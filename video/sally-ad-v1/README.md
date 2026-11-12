@@ -18,6 +18,44 @@ The videos have their own (distant, quiet) sound, and the hand-held voice record
 
 Clock drift between the phones is ~3 ms per 8 min, so it can be ignored. `roughcut.py` re-checks the offset of every clip before cutting.
 
+## Full ad plan (agreed with FaFo, 2026-11-12)
+
+**Base:** rough cut v5 (`tools/cut_v5.py`): Sally's best take of each line, seamless cuts, hand-held phone audio with a light EQ, every line at the same volume, ~46 s. Vertical 1080×1920, 30 fps. Audience: Russian speakers; Sally speaks Russian, except the English hook.
+
+**Decisions FaFo made**
+- Opening line: the English hook "Did you learn words but never use them?", take 2 from video `20261110_162238` (at 0:27.75, where she points at the camera).
+- Ending: the WhatsApp line (`20261110_171701` at 1:01, the more energetic second take), not «Записывайтесь…».
+- Teachers subtitle: «…с носителями языка и другими иностранными преподавателями» (she says «…и иностранцами»; only the subtitle changes).
+- Sally zoomed in (1440×2560 crop of 4K, eyes at ~36% height); seamless cuts with no padding; the «персональный» pause removed.
+- Music: added in Instagram when posting, not mixed into the file.
+- During app screens, Sally stays visible in a **round window** (lip sync visible); FaFo approved this.
+
+**Scene by scene** (the script line → what's on screen → the yellow label)
+
+| Line (spoken) | On screen | Label |
+|---|---|---|
+| "Did you learn words but never use them?" + Хотите никогда не забывать… | Sally full screen, big subtitle | — |
+| В Omnica English индивидуальный урок — это только начало. | `s0n_live`: live transcription in the lesson room (Sally's own English lines appear as text) + round window | УРОК |
+| После созвона все новые слова автоматически попадают в ваш личный словарь. | `s3`: student lesson page — «Ваши ошибки» (mistakes red → green + Russian explanation), then the word list. Optionally a short flash of `s1` (AI finds mistakes) | СЛОВАРЬ |
+| Наша система интервального повторения… | `s4`: flashcards flipping (take photos → фотографировать…) | ПОВТОРЕНИЕ |
+| Повторяйте слова в нашей бесплатной библиотеке… читайте материал, нажимайте… | `s5`: story, tap "steep" → крутой → add → turns green | БИБЛИОТЕКА |
+| А между уроками вы можете выполнять домашние задания на платформе. | `s6b`: Анна types her answers (optionally a flash of `s6a`: AI builds homework from her mistakes) | ДОМАШНЕЕ ЗАДАНИЕ |
+| Преподаватель проверяет каждое упражнение и оставляет подробный разбор ошибок. | `s6d`: Проверено 8.5/10 + teacher comments | ПРОВЕРКА |
+| Управлять расписанием легко… | `s7`: calendar → 18:00 → Подтвердить → «Урок забронирован» (cut there: after booking the rest of the day turns unavailable) | РАСПИСАНИЕ |
+| В нашей школе вы также можете заниматься с носителями языка… | Sally full screen | ПРЕПОДАВАТЕЛИ |
+| Напишите нам в WhatsApp, чтобы записаться на пробный урок. | Sally full screen → end card | ПРОБНЫЙ УРОК |
+
+**Layout rules**
+- Russian subtitles for every line (English hook: English line + Russian subtitle). At most 3 lines.
+- Keep text clear of the Reels UI: the bottom ~26% and the right ~11% are covered by Instagram's buttons and caption.
+- On Sally full-screen cuts, alternate the normal zoom with a slightly closer one so the jump cuts look intentional.
+- Round window: a circle of Sally's face (same takes, same audio) in a top corner, clear of the subtitles and of the app content being shown.
+- App screens need no zoom (recorded at 1080×1920); trim the clips to fit each line's length and speed up or cut the AI waits.
+- End card: Omnica English logo (`video/sally-motion-test-v1/public/logo.svg`), «Записаться на пробный урок», a WhatsApp button and the domain omnicaenglish.com. Keep it clear of the Reels UI zones.
+- No price in the video (it changes; the caption and site carry it).
+
+**Output:** 1080×1920 H.264 MP4 + AAC, no music. FaFo saves it to Drive and posts it, adding music in Instagram.
+
 ## Pick up here (handoff for any AI)
 
 **Where things live**
