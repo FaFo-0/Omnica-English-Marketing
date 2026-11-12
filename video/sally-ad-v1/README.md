@@ -18,7 +18,13 @@ The videos have their own (distant, quiet) sound, and the hand-held voice record
 
 Clock drift between the phones is ~3 ms per 8 min, so it can be ignored. `roughcut.py` re-checks the offset of every clip before cutting.
 
-## Rough cut v4 (current)
+## Rough cut v5 (current)
+
+`rough-cut-v5.mp4` (Drive): same cut as v4 (`tools/cut_v5.py`), but with no noise reduction, because FaFo found v4 muffled. It uses a light presence EQ instead: −2 dB at 250 Hz, +3 dB at 3.5 kHz, +2 dB treble shelf at 8 kHz. The crossfades and levelling are unchanged. Sync is the same as v4 (within ±15 ms of the camera audio at every cut).
+
+**Timing quirk:** reading the voice `.m4a` with `-ss` (as `fine_offset` does) lands 15.9 ms differently from a full decode. Every offset is measured against the `-ss` reading, so any full-decode copy of the voice (the `.wav` files) is trimmed by 15.9 ms to match. In v4, `afftdn` accounted for the other ~25 ms of its 40.9 ms correction.
+
+## Rough cut v4
 
 `rough-cut-v4.mp4` (Drive): 46 s, built by `tools/cut_v4.py`. It ends with the WhatsApp line (20261110_171701 at 1:01). Changes from v3:
 
