@@ -10,7 +10,7 @@ Instagram and video material for [omnicaenglish.com](https://omnicaenglish.com).
 | Folder | What |
 |---|---|
 | `instagram/` | Story highlights, carousels, covers (PNG exports + editable sources). Moved from the app repo 2026-11-08. |
-| `video/` | Motion tests (Remotion/Three.js). |
+| `video/` | Motion tests (Remotion/Three.js) and the Sally ad edit tools (`sally-ad-v1/`). Video files themselves live on [Google Drive](https://drive.google.com/drive/folders/1E6SHzFrAHHQhtKylZ7BNtYCnwDfOZYBI), not in git. |
 | `screenshots/` | App screenshots used in posts. |
 | `inbox/` | Unsorted material dropped in from FaFo's laptop, waiting to be sorted (keep / delete). |
 

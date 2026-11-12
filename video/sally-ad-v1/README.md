@@ -1,6 +1,8 @@
 # Sally ad v1: rough cut
 
-Script: `Sally's AD.pdf` (repo root). Raw footage is on FaFo's Google Drive (5 videos, 4K vertical 60 fps, plus one hand-held voice recording, 2026-11-10). It's not committed because it's too large.
+Script: `Sally's AD.pdf` (repo root). **Videos live on Google Drive, not in git** (too large):
+- Raw footage (5 videos, 4K vertical 60 fps, plus one hand-held voice recording, 2026-11-10): https://drive.google.com/drive/folders/1E6SHzFrAHHQhtKylZ7BNtYCnwDfOZYBI
+- Rough cuts and final exports go in the same folder (FaFo uploads them; this cloud session can only read from Drive).
 
 ## Sync
 
@@ -18,10 +20,10 @@ Clock drift between the phones is ~3 ms per 8 min, so it can be ignored. `roughc
 
 ## Rough cut v2 (current)
 
-`exports/rough-cut-v2.mp4`: 48 s, 1080×1920. It opens with the English hook "Did you learn words but never use them?" (20261110_162238, take 2), then the Russian script as in v1. FaFo confirmed the audio sync is good on v1. Each clip is zoomed to a 1440×2560 crop of the 4K frame, centred on Sally's face (`tools/faces.py` → `faces.json`, eyes at ~36% height).
+`rough-cut-v2.mp4` (Drive): 48 s, 1080×1920. It opens with the English hook "Did you learn words but never use them?" (20261110_162238, take 2), then the Russian script as in v1. FaFo confirmed the audio sync is good on v1. Each clip is zoomed to a 1440×2560 crop of the 4K frame, centred on Sally's face (`tools/faces.py` → `faces.json`, eyes at ~36% height).
 
 ## Rough cut v1
 
-`exports/rough-cut-v1.mp4`: 45 s, 720×1280, Sally only, hand-held audio. Best takes in PDF order, all from 20261110_170538 except the native-teachers line (20261110_171528). No screen inserts, subtitles or labels yet.
+`rough-cut-v1.mp4` (Drive): 45 s, 720×1280, Sally only, hand-held audio. Best takes in PDF order, all from 20261110_170538 except the native-teachers line (20261110_171528). No screen inserts, subtitles or labels yet.
 
 Transcription: Soniox `stt-async-v4` (`tools/transcribe.py`, key from the app's dev Convex env).
