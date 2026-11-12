@@ -10,7 +10,7 @@ Instagram and video material for [omnicaenglish.com](https://omnicaenglish.com).
 | Folder | What |
 |---|---|
 | `instagram/` | Story highlights, carousels, covers (PNG exports + editable sources). Moved from the app repo 2026-11-08. |
-| `video/` | Motion tests (Remotion/Three.js). |
+| `video/` | Motion tests (Remotion/Three.js) and the Sally ad edit (`sally-ad-v1/` — finished cuts in `exports/`). |
 | `screenshots/` | App screenshots used in posts. |
 | `inbox/` | Unsorted material dropped in from FaFo's laptop, waiting to be sorted (keep / delete). |
 
@@ -18,6 +18,7 @@ Instagram and video material for [omnicaenglish.com](https://omnicaenglish.com).
 
 Paths below say `assets/marketing/…` — in this repo drop that prefix (e.g. `instagram/start-highlight-ru-v2/`).
 
+- **Sally ad v1 [Claude, 2026-11-12]:** `video/sally-ad-v1/` — first finished edit from Sally's footage and the handoff screen recordings: 46 s master, 34 s cold-traffic cut and an alternate-hook version, 1080×1920 with burned-in Russian subtitles plus `.srt`. `edit.json` drives the whole edit. Not yet listened to by a person; no music. See its README.
 - **Phone posting ZIP [Codex, 2026-11-01]:** `assets/marketing/instagram/omnica-highlights-phone-v1.zip` contains only 41 final PNGs: 35 numbered Stories from current Start v2, How we learn v2, Library, Pricing and About us, plus six covers in a separate folder. Teacher slides are excluded because available local templates retain photo placeholders; the teacher cover is included. No FAQ, Reviews, source files, previews or documents. Pricing Story 1 still needs the native Link sticker recorded in its pack.
 - **About us highlight [Codex, 2026-11-01]:** `assets/marketing/instagram/about-us-ru-v1/` contains four Russian Stories and conversation cover in the approved founder-note direction, based on Mustafa’s supplied origin and purpose. Text-led, with complete English translations, live-text SVGs, five 1080×1920 PNGs, phone previews and ZIP. Native Affinity import remains unverified; previous assets preserved. Selected highlights are Start, Teachers (existing template), How we learn, Library, Pricing and About us; FAQ and Reviews are excluded at Mustafa’s request.
 - **Pricing highlight [Codex, 2026-11-01]:** `assets/marketing/instagram/pricing-highlight-ru-v1/` contains three concise Russian Stories and a price-tag cover, directing readers to `/prices?lang=ru` with essential booking/payment information. No price tables or fixed offer terms in the artwork. Includes English translations, live-text SVGs, four 1080×1920 PNGs, phone previews and ZIP. **Before posting Story 1, add the native Instagram Link sticker** using `source/posting.json`; a printed URL is not tappable. Native Affinity import remains unverified; previous assets preserved.
