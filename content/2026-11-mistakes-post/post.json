@@ -1,0 +1,115 @@
+{
+  "format": "post",
+  "slides": [
+    {
+      "id": "1",
+      "bg": "purple",
+      "title": [
+        "Говорите «I go»",
+        "вместо «I went»?"
+      ],
+      "accent": [
+        "Мы заметим."
+      ],
+      "visual": {
+        "type": "chat",
+        "items": [
+          [
+            "Вы сказали",
+            "On Saturday I go to the mountains…"
+          ],
+          [
+            "Правильно",
+            "On Saturday I went…"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "2",
+      "bg": "cream",
+      "title": [
+        "Урок записывается."
+      ],
+      "body": [
+        "После занятия мы находим ошибки",
+        "в вашей речи — преподаватель",
+        "проверяет каждую."
+      ],
+      "visual": {
+        "type": "steps",
+        "items": [
+          [
+            "video",
+            "Урок в Google Meet"
+          ],
+          [
+            "search",
+            "Находим ошибки в речи"
+          ],
+          [
+            "check-check",
+            "Преподаватель проверяет"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "3",
+      "bg": "cream",
+      "title": [
+        "Красным —",
+        "как вы сказали."
+      ],
+      "accent": [
+        "Зелёным — как надо."
+      ],
+      "visual": {
+        "type": "screenshot",
+        "src": "library/screenshots/2026-11-14-mistakes-ru/01-mistakes-card.jpg",
+        "cssWidth": 366,
+        "crop": [
+          0,
+          228
+        ],
+        "width": 860
+      }
+    },
+    {
+      "id": "4",
+      "bg": "cream",
+      "title": [
+        "И почему —"
+      ],
+      "accent": [
+        "по-русски."
+      ],
+      "visual": {
+        "type": "screenshot",
+        "src": "library/screenshots/2026-11-14-mistakes-ru/01-mistakes-card.jpg",
+        "cssWidth": 366,
+        "crop": [
+          365,
+          625
+        ],
+        "width": 860
+      }
+    },
+    {
+      "id": "5",
+      "bg": "yellow",
+      "title": [
+        "Видите ошибку —",
+        "перестаёте",
+        "её делать."
+      ],
+      "accent": [
+        "Попробуйте",
+        "на пробном уроке."
+      ],
+      "body": [
+        "Ссылка — в профиле."
+      ]
+    }
+  ]
+}

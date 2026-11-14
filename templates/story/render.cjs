@@ -42,8 +42,8 @@ function visual(v, t, dir) {
   if (!v) return "";
   if (v.type === "screenshot") {
     const file = path.join(MARKETING, v.src);
-    const [y0, y1] = v.crop; // CSS px of the 390-wide capture
-    const w = v.width ?? 880, scale = w / 390;
+    const [y0, y1] = v.crop; // CSS px of the capture (390 wide unless cssWidth says otherwise)
+    const w = v.width ?? 880, scale = w / (v.cssWidth ?? 390);
     return `<div class="shot" style="width:${w}px;height:${(y1 - y0) * scale}px"><img src="${dataUri(file, "image/jpeg")}" style="width:${w}px;transform:translateY(${-y0 * scale}px)"/></div>`;
   }
   if (v.type === "mark") return `<img class="mark" src="${logo("logo.svg")}"/>`;
@@ -89,11 +89,13 @@ h1{font-weight:800;font-size:92px;line-height:1.04;letter-spacing:-.025em}
 .site{position:absolute;left:90px;bottom:250px;font-size:30px;font-weight:600;opacity:.7}
 `;
 
-function storyHtml(s) {
+const POST_CSS = `body.post{height:1350px}.post .logo{top:80px;height:76px}.post .wrap{top:220px;bottom:150px}.post .site{bottom:70px}.post h1{font-size:84px}.post .accent{font-size:80px}.post .body{margin-top:28px}.post .vis{margin-top:40px}`;
+
+function storyHtml(s, format) {
   const t = THEMES[s.bg];
   const wave = s.wave === false ? "" : `<svg class="wave" style="top:${s.waveY ?? 330}px" width="1120" height="60" viewBox="0 0 1120 60"><path d="M0 40 C 200 0, 360 0, 560 30 S 920 60, 1120 10" stroke="${t.line}" stroke-width="7" fill="none" stroke-linecap="round" opacity=".9"/></svg>`;
-  return `<!doctype html><html><head><meta charset="utf-8"><style>${CSS}</style></head>
-  <body style="background:${t.bg}">
+  return `<!doctype html><html><head><meta charset="utf-8"><style>${CSS}${POST_CSS}</style></head>
+  <body class="${format}" style="background:${t.bg}">
     <img class="logo" src="${logo(t.logo)}"/>
     ${s.wave ? wave : ""}
     <div class="wrap">
@@ -113,18 +115,35 @@ function coverHtml(c) {
 
 (async () => {
   const dir = path.resolve(process.argv[2] || ".");
-  const spec = JSON.parse(fs.readFileSync(path.join(dir, "stories.json"), "utf8"));
+  const specFile = ["post.json", "stories.json"].map(f => path.join(dir, f)).find(f => fs.existsSync(f));
+  const spec = JSON.parse(fs.readFileSync(specFile, "utf8"));
   const only = process.argv[3];
-  fs.mkdirSync(path.join(dir, "stories"), { recursive: true });
-  fs.mkdirSync(path.join(dir, "covers"), { recursive: true });
+  
   const proxy = process.env.HTTPS_PROXY ? { server: process.env.HTTPS_PROXY, bypass: "localhost" } : undefined;
   const browser = await chromium.launch({ proxy });
   const page = await browser.newPage({ viewport: { width: 1080, height: 1920 } });
+  // A carousel post: { "format": "post", "slides": [...] } → slides/ at 1080×1350.
+  if (spec.format === "post") {
+    fs.mkdirSync(path.join(dir, "slides"), { recursive: true });
+    await page.setViewportSize({ width: 1080, height: 1350 });
+    for (const s of spec.slides) {
+      if (only && !s.id.startsWith(only)) continue;
+      await page.setContent(storyHtml(s, "post"), { waitUntil: "networkidle" });
+      await page.evaluate(() => document.fonts.ready);
+      const out = path.join(dir, "slides", `${s.id}.png`);
+      await page.screenshot({ path: out });
+      console.log("slide", path.relative(MARKETING, out));
+    }
+    await browser.close();
+    return;
+  }
+  fs.mkdirSync(path.join(dir, "stories"), { recursive: true });
+  fs.mkdirSync(path.join(dir, "covers"), { recursive: true });
   for (const h of spec.highlights) {
     for (const s of h.stories) {
       if (only && !s.id.startsWith(only)) continue;
       await page.setViewportSize({ width: 1080, height: 1920 });
-      await page.setContent(storyHtml(s), { waitUntil: "networkidle" });
+      await page.setContent(storyHtml(s, "story"), { waitUntil: "networkidle" });
       await page.evaluate(() => document.fonts.ready);
       const out = path.join(dir, "stories", `${s.id}.png`);
       await page.screenshot({ path: out });
