@@ -1,8 +1,9 @@
 # Instagram highlights (remake)
 
 **Status:** step 4, designed 2026-11-09 and waiting for FaFo's feedback. Copy approved the same day (prices removed, Teachers made general, About dropped).
+**Update 2026-11-14:** the speaking-mistakes finder is added. Старт 1-2 now has 4 steps («Ваши ошибки — с разбором» added). Уроки has a new story 2-2 «Ваши ошибки из урока — *с разбором по-русски.* Преподаватель проверяет каждую.» with the real mistakes screenshot; Уроки is now 2-1 … 2-5 (CTA is 2-5). 20 Stories in total.
 **Files:** `stories/` (19 PNGs, 1080 × 1920), `covers/` (5 PNGs), `stories.json` (the source; re-render with `templates/story/render.cjs`).
-**Posting:** on every story with the ↓ arrow (1-4, 2-4, 3-4, 4-4, 5-3), add Instagram's **Link sticker** where the arrow points. Use `omnicaenglish.com/prices?lang=ru`, or `omnicaenglish.com` for 4-4. One addition to the approved copy: story 3-2 has the headline «Кто будет вас учить».
+**Posting:** on every story with the ↓ arrow (1-4, 2-5, 3-4, 4-4, 5-3), add Instagram's **Link sticker** where the arrow points. Use `omnicaenglish.com/prices?lang=ru`, or `omnicaenglish.com` for 4-4. One addition to the approved copy: story 3-2 has the headline «Кто будет вас учить».
 **Goal:** someone arrives from the ad, opens the profile, and understands what Omnica is, what it costs and how to start in under a minute.
 **Format:** Stories 1080 × 1920. One idea per Story, a big headline, one picture. 3–4 Stories per highlight: 19 in total (the old set had 35).
 
