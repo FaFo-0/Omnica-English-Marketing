@@ -98,9 +98,10 @@ h1{font-weight:800;font-size:92px;line-height:1.04;letter-spacing:-.025em}
 .mWhy{font-size:40px;font-weight:500;line-height:1.32;color:${C.ink};border-top:3px solid ${C.lavender};padding-top:28px;margin-top:8px}
 .wave{position:absolute;left:-20px;right:-20px}
 .site{position:absolute;left:90px;bottom:250px;font-size:30px;font-weight:600;opacity:.7}
+.count{position:absolute;right:90px;bottom:250px;font-size:30px;font-weight:600;opacity:.7;font-variant-numeric:tabular-nums}
 `;
 
-const POST_CSS = `body.post{height:1350px}.post .logo{top:80px;height:76px}.post .wrap{top:220px;bottom:150px}.post .site{bottom:70px}.post .count{position:absolute;right:90px;bottom:70px;font-size:30px;font-weight:600;opacity:.7;font-variant-numeric:tabular-nums}.post h1{font-size:84px}.post .accent{font-size:80px}.post .body{margin-top:28px}.post .vis{margin-top:40px}`;
+const POST_CSS = `body.post{height:1350px}.post .logo{top:80px;height:76px}.post .wrap{top:220px;bottom:150px}.post .site{bottom:70px}.post .count{bottom:70px}.post h1{font-size:84px}.post .accent{font-size:80px}.post .body{margin-top:28px}.post .vis{margin-top:40px}`;
 
 function storyHtml(s, format, count) {
   const t = THEMES[s.bg];
@@ -152,10 +153,10 @@ function coverHtml(c) {
   fs.mkdirSync(path.join(dir, "stories"), { recursive: true });
   fs.mkdirSync(path.join(dir, "covers"), { recursive: true });
   for (const h of spec.highlights) {
-    for (const s of h.stories) {
+    for (const [i, s] of h.stories.entries()) {
       if (only && !s.id.startsWith(only)) continue;
       await page.setViewportSize({ width: 1080, height: 1920 });
-      await page.setContent(storyHtml(s, "story"), { waitUntil: "networkidle" });
+      await page.setContent(storyHtml(s, "story", `${i + 1} / ${h.stories.length}`), { waitUntil: "networkidle" });
       await page.evaluate(() => document.fonts.ready);
       const out = path.join(dir, "stories", `${s.id}.png`);
       await page.screenshot({ path: out });
