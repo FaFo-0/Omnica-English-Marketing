@@ -89,9 +89,9 @@ h1{font-weight:800;font-size:92px;line-height:1.04;letter-spacing:-.025em}
 .site{position:absolute;left:90px;bottom:250px;font-size:30px;font-weight:600;opacity:.7}
 `;
 
-const POST_CSS = `body.post{height:1350px}.post .logo{top:80px;height:76px}.post .wrap{top:220px;bottom:150px}.post .site{bottom:70px}.post h1{font-size:84px}.post .accent{font-size:80px}.post .body{margin-top:28px}.post .vis{margin-top:40px}`;
+const POST_CSS = `body.post{height:1350px}.post .logo{top:80px;height:76px}.post .wrap{top:220px;bottom:150px}.post .site{bottom:70px}.post .count{position:absolute;right:90px;bottom:70px;font-size:30px;font-weight:600;opacity:.7;font-variant-numeric:tabular-nums}.post h1{font-size:84px}.post .accent{font-size:80px}.post .body{margin-top:28px}.post .vis{margin-top:40px}`;
 
-function storyHtml(s, format) {
+function storyHtml(s, format, count) {
   const t = THEMES[s.bg];
   const wave = s.wave === false ? "" : `<svg class="wave" style="top:${s.waveY ?? 330}px" width="1120" height="60" viewBox="0 0 1120 60"><path d="M0 40 C 200 0, 360 0, 560 30 S 920 60, 1120 10" stroke="${t.line}" stroke-width="7" fill="none" stroke-linecap="round" opacity=".9"/></svg>`;
   return `<!doctype html><html><head><meta charset="utf-8"><style>${CSS}${POST_CSS}</style></head>
@@ -105,6 +105,7 @@ function storyHtml(s, format) {
       <div class="vis">${visual(s.visual, t)}</div>
     </div>
     ${s.site === false ? "" : `<div class="site" style="color:${t.title}">omnicaenglish.com</div>`}
+    ${count ? `<div class="count" style="color:${t.title}">${count}</div>` : ""}
   </body></html>`;
 }
 
@@ -126,9 +127,9 @@ function coverHtml(c) {
   if (spec.format === "post") {
     fs.mkdirSync(path.join(dir, "slides"), { recursive: true });
     await page.setViewportSize({ width: 1080, height: 1350 });
-    for (const s of spec.slides) {
+    for (const [i, s] of spec.slides.entries()) {
       if (only && !s.id.startsWith(only)) continue;
-      await page.setContent(storyHtml(s, "post"), { waitUntil: "networkidle" });
+      await page.setContent(storyHtml(s, "post", `${i + 1} / ${spec.slides.length}`), { waitUntil: "networkidle" });
       await page.evaluate(() => document.fonts.ready);
       const out = path.join(dir, "slides", `${s.id}.png`);
       await page.screenshot({ path: out });
