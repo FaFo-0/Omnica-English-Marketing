@@ -46,6 +46,10 @@ function visual(v, t, dir) {
     const w = v.width ?? 880, scale = w / (v.cssWidth ?? 390);
     return `<div class="shot" style="width:${w}px;height:${(y1 - y0) * scale}px"><img src="${dataUri(file, "image/jpeg")}" style="width:${w}px;transform:translateY(${-y0 * scale}px)"/></div>`;
   }
+  if (v.type === "mistake") return `<div class="mistake">
+      <div class="mRow"><span class="mTag bad">✗</span><span class="mBad">${esc(v.wrong)}</span></div>
+      <div class="mRow"><span class="mTag good">✓</span><span class="mGood">${esc(v.right)}</span></div>
+      ${v.why ? `<div class="mWhy">${esc(v.why)}</div>` : ""}</div>`;
   if (v.type === "mark") return `<img class="mark" src="${logo("logo.svg")}"/>`;
   if (v.type === "steps") return `<div class="steps">${v.items.map(([ic, text], i) => `
       <div class="step"><div class="stepIcon">${icon(ic, C.purple, 64, 2)}</div><div class="stepText">${esc(text)}</div></div>${i < v.items.length - 1 ? `<div class="stepLine"></div>` : ""}`).join("")}</div>`;
@@ -85,6 +89,13 @@ h1{font-weight:800;font-size:92px;line-height:1.04;letter-spacing:-.025em}
 .pt{font-size:42px;font-weight:500;color:${C.ink};margin-top:14px;line-height:1.28}
 .bigIcon{width:520px;height:520px;border-radius:50%;display:flex;align-items:center;justify-content:center}
 .link{width:100%;height:100%;display:flex;align-items:flex-start;justify-content:center;padding-top:20px}
+.mistake{width:100%;background:#fff;border-radius:40px;padding:48px 52px;box-shadow:0 24px 60px rgba(57,16,82,.14)}
+.mRow{display:flex;align-items:flex-start;gap:26px;margin-bottom:26px}
+.mTag{flex:none;width:64px;height:64px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:38px;font-weight:800;color:#fff;margin-top:2px}
+.mTag.bad{background:#D93636}.mTag.good{background:#1E9E5A}
+.mBad{font-size:52px;font-weight:600;line-height:1.25;color:#B42323;text-decoration:line-through;text-decoration-thickness:4px;text-decoration-color:rgba(217,54,54,.7)}
+.mGood{font-size:52px;font-weight:700;line-height:1.25;color:#167A45}
+.mWhy{font-size:40px;font-weight:500;line-height:1.32;color:${C.ink};border-top:3px solid ${C.lavender};padding-top:28px;margin-top:8px}
 .wave{position:absolute;left:-20px;right:-20px}
 .site{position:absolute;left:90px;bottom:250px;font-size:30px;font-weight:600;opacity:.7}
 `;

@@ -1,0 +1,112 @@
+{
+  "format": "post",
+  "slides": [
+    {
+      "id": "1",
+      "bg": "yellow",
+      "title": [
+        "5 ошибок, которые",
+        "часто делают",
+        "русскоязычные"
+      ],
+      "accent": [
+        "Проверьте себя."
+      ],
+      "visual": {
+        "type": "mistake",
+        "wrong": "I am agree with you.",
+        "right": "I agree with you."
+      }
+    },
+    {
+      "id": "2",
+      "bg": "cream",
+      "title": [
+        "1. «Мне трудно»"
+      ],
+      "visual": {
+        "type": "mistake",
+        "wrong": "It’s hard to me.",
+        "right": "It’s hard for me.",
+        "why": "После hard, easy, difficult говорим for me, а не to me."
+      }
+    },
+    {
+      "id": "3",
+      "bg": "cream",
+      "title": [
+        "2. «С 2019 года»"
+      ],
+      "visual": {
+        "type": "mistake",
+        "wrong": "I live here since 2019 year.",
+        "right": "I have lived here since 2019.",
+        "why": "Слово year после года не нужно. А «живу с…» — это have lived."
+      }
+    },
+    {
+      "id": "4",
+      "bg": "cream",
+      "title": [
+        "3. «Я учусь»"
+      ],
+      "visual": {
+        "type": "mistake",
+        "wrong": "I’m study at university.",
+        "right": "I study at university.",
+        "why": "Am не ставим перед обычным глаголом: I study или I’m studying."
+      }
+    },
+    {
+      "id": "5",
+      "bg": "cream",
+      "title": [
+        "4. «Мы были»"
+      ],
+      "visual": {
+        "type": "mistake",
+        "wrong": "We was in Antalya.",
+        "right": "We were in Antalya.",
+        "why": "С we, you, they — только were."
+      }
+    },
+    {
+      "id": "6",
+      "bg": "cream",
+      "title": [
+        "5. «Хочу, чтобы…»"
+      ],
+      "visual": {
+        "type": "mistake",
+        "wrong": "I want my sister can help me.",
+        "right": "I want my sister to help me.",
+        "why": "Want + человек + to + глагол. Без can и без that."
+      }
+    },
+    {
+      "id": "7",
+      "bg": "purple",
+      "title": [
+        "Такие ошибки мы",
+        "находим в вашей речи"
+      ],
+      "accent": [
+        "после урока."
+      ],
+      "body": [
+        "С разбором по-русски.",
+        "Пробный урок — ссылка в профиле."
+      ],
+      "visual": {
+        "type": "screenshot",
+        "src": "library/screenshots/2026-11-14-mistakes-ru/01-mistakes-card.jpg",
+        "cssWidth": 366,
+        "crop": [
+          0,
+          228
+        ],
+        "width": 780
+      }
+    }
+  ]
+}
