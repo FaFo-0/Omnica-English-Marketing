@@ -1,0 +1,107 @@
+{
+  "format": "post",
+  "slides": [
+    {
+      "id": "1",
+      "bg": "yellow",
+      "title": [
+        "Не знаете слово",
+        "в тексте?"
+      ],
+      "accent": [
+        "Просто нажмите",
+        "на него."
+      ],
+      "visual": {
+        "type": "screenshot",
+        "src": "library/screenshots/2026-11-09-phone-ru/02-reading-word-tap.jpg",
+        "crop": [
+          285,
+          560
+        ],
+        "width": 820
+      }
+    },
+    {
+      "id": "2",
+      "bg": "cream",
+      "title": [
+        "Бесплатная",
+        "библиотека"
+      ],
+      "accent": [
+        "на английском."
+      ],
+      "body": [
+        "Рассказы и книги по уровню — от A1."
+      ],
+      "visual": {
+        "type": "screenshot",
+        "src": "library/screenshots/2026-11-09-phone-ru/01-library-catalogue.jpg",
+        "crop": [
+          335,
+          665
+        ],
+        "width": 640
+      }
+    },
+    {
+      "id": "3",
+      "bg": "cream",
+      "title": [
+        "Сохранили слово —"
+      ],
+      "accent": [
+        "оно подсвечено",
+        "зелёным."
+      ],
+      "visual": {
+        "type": "screenshot",
+        "src": "library/screenshots/2026-11-09-phone-ru/03-reading-word-saved.jpg",
+        "crop": [
+          85,
+          405
+        ],
+        "width": 880
+      }
+    },
+    {
+      "id": "4",
+      "bg": "cream",
+      "title": [
+        "Все слова —",
+        "в одном списке."
+      ],
+      "body": [
+        "И сразу в карточках для повторения."
+      ],
+      "visual": {
+        "type": "screenshot",
+        "src": "library/screenshots/2026-11-09-phone-ru/04-my-words.jpg",
+        "crop": [
+          330,
+          570
+        ],
+        "width": 880
+      }
+    },
+    {
+      "id": "5",
+      "bg": "purple",
+      "title": [
+        "Библиотека",
+        "и карточки —"
+      ],
+      "accent": [
+        "бесплатно."
+      ],
+      "body": [
+        "Без покупки уроков.",
+        "Регистрация — по ссылке в профиле."
+      ],
+      "visual": {
+        "type": "mark"
+      }
+    }
+  ]
+}
