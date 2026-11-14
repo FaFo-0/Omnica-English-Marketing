@@ -28,3 +28,22 @@ npm run studio      # live preview and editing
 npm run render      # → exports/omnica-motion-test.mp4 (not committed)
 ```
 On a Mac, add `-- --browser-executable='/Applications/Google Chrome.app/Contents/MacOS/Google Chrome'` if Remotion can't find Chrome.
+
+## Reel caption (2026-11-14)
+
+```
+Урок закончился — а английский продолжается 🇬🇧
+
+Это Салли, преподаватель Omnica English. После каждого урока у вас в личном кабинете остаётся всё для практики:
+— новые слова с урока — сразу в карточках,
+— ваши ошибки из речи — с разбором по-русски,
+— домашнее задание, которое проверяет преподаватель.
+
+А ещё — бесплатная библиотека: читайте на английском, нажимайте на незнакомое слово и сохраняйте его в карточки.
+
+Хотите заниматься с Салли или другим преподавателем? Запишитесь на пробный урок — ссылка в профиле.
+
+#английскийонлайн #английскийдлявзрослых #английскийязык #урокианглийского
+```
+
+EN: The lesson is over, but your English keeps going. This is Sally, an Omnica English teacher. After every lesson your account keeps everything you need to practise: the lesson's new words, straight into flashcards; your spoken mistakes, explained in Russian; homework your teacher checks. Plus a free library: read in English, tap an unknown word and save it to your flashcards. Want lessons with Sally or another teacher? Book a trial lesson. The link is in our profile.
