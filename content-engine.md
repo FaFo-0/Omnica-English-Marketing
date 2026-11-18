@@ -91,6 +91,10 @@ content/2026-W48/
 2. Is it Instagram only, or TikTok and YouTube Shorts too? Same files, just more uploading.
 3. Fresh phone screenshots for the Thursday posts come from the QA accounts; I'll take them myself.
 
+## Built so far (2026-11-18)
+
+- `engine/motion/`: Remotion project with the **table** format (`content/2026-11-tenses-reel/`) and the **«Как сказать по-английски»** format (`content/2026-11-age-reel/`). Both are silent; voice comes once the ElevenLabs key is in.
+
 ## Build order once approved
 
 1. Install the Remotion skill, build the **table** template (reference format) and the **mistake** template, then send FaFo two sample videos: «3 времени, а не 12» in our own words and design, plus one mistake.

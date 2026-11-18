@@ -10,8 +10,8 @@
 
 1. *(yellow)* **5 ошибок, которые часто делают русскоязычные.** *Проверьте себя.* ✗ I am agree with you. ✓ I agree with you.
 2. **1. «Мне трудно»** ✗ It's hard to me. ✓ It's hard for me. После hard, easy, difficult говорим for me, а не to me.
-3. **2. «С 2019 года»** ✗ I live here since 2019 year. ✓ I have lived here since 2019. Слово year после года не нужно. А «живу с…» — это have lived.
-4. **3. «Я учусь»** ✗ I'm study at university. ✓ I study at university. Am не ставим перед обычным глаголом: I study или I'm studying.
+3. **2. «С 2019 года»** ✗ I live here since 2019 year. ✓ I have lived here since 2019. После числа слово year не нужно. А «живу с…» — это have lived.
+4. **3. «Я учусь»** ✗ I'm study at university. ✓ I study at university. Am и study вместе не ставим: I study или I'm studying.
 5. **4. «Мы были»** ✗ We was in Antalya. ✓ We were in Antalya. С we, you, they — только were.
 6. **5. «Хочу, чтобы…»** ✗ I want my sister can help me. ✓ I want my sister to help me. Want + человек + to + глагол. Без can и без that.
 7. *(purple)* **Такие ошибки мы находим в вашей речи** *после урока.* С разбором по-русски. Пробный урок — ссылка в профиле. Screenshot: the mistakes card.
@@ -21,10 +21,10 @@
 ```
 Сохраните, чтобы не забыть 📌
 
-Эти ошибки мы часто слышим на уроках. Почти все они — из русского: фразу переводят слово в слово.
+Эти ошибки мы часто слышим на уроках. Многие из них — из русского: фразу переводят слово в слово.
 
 1. It's hard to me → It's hard for me
-2. since 2019 year → since 2019
+2. I live here since 2019 year → I have lived here since 2019
 3. I'm study → I study
 4. We was → We were
 5. I want my sister can help me → I want my sister to help me

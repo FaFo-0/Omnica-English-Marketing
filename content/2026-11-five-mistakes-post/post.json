@@ -41,7 +41,7 @@
         "type": "mistake",
         "wrong": "I live here since 2019 year.",
         "right": "I have lived here since 2019.",
-        "why": "Слово year после года не нужно. А «живу с…» — это have lived."
+        "why": "После числа слово year не нужно. А «живу с…» — это have lived."
       }
     },
     {
@@ -54,7 +54,7 @@
         "type": "mistake",
         "wrong": "I’m study at university.",
         "right": "I study at university.",
-        "why": "Am не ставим перед обычным глаголом: I study или I’m studying."
+        "why": "Am и study вместе не ставим: I study или I’m studying."
       }
     },
     {

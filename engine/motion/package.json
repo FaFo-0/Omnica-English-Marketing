@@ -1,0 +1,15 @@
+{
+  "name": "omnica-content-engine",
+  "private": true,
+  "scripts": {
+    "studio": "remotion studio src/index.jsx",
+    "render": "node render.mjs"
+  },
+  "dependencies": {
+    "remotion": "4.0.539",
+    "@remotion/cli": "4.0.539",
+    "@remotion/google-fonts": "4.0.539",
+    "react": "19.2.3",
+    "react-dom": "19.2.3"
+  }
+}
