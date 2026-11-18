@@ -14,7 +14,7 @@
 ## Look and sound (FaFo, 2026-11-18)
 
 - **Purple background (`#6716A4`) on every Reel**, so the grid reads as ours at a glance. White text, **yellow (`#FFCA00`) for the one thing to remember** (the correct form, the table's key cell), lavender `#EBDDF3` table cells, deep purple `#391052` for shadows. Inter, plus PT Serif Italic for one accent word. Logo (`lockup-dark.svg`) on the last frame only. No copying the reference's colours or layout.
-- **AI voice-over, generated.** FaFo doesn't speak Russian, so nobody records. **ElevenLabs** (`eleven_multilingual_v2`): one calm Russian voice for the explanations and one native English voice for the example sentences, so learners hear real pronunciation. This is the provider Remotion's own voice-over guide uses; the video length fits the audio automatically. Cost: the ~$5/month starter plan covers 7 short Reels a week.
+- **AI voice-over, generated.** FaFo doesn't speak Russian, so nobody records. **ElevenLabs** (`eleven_multilingual_v2`): one calm Russian voice for the explanations and one native English voice for the example sentences, so learners hear real pronunciation. This is the provider Remotion's own voice-over guide uses; the video length fits the audio automatically. Cost (checked 2026-11-18, third-party summaries of elevenlabs.io/pricing): billed per character, ~1 credit per character. A ~60 s Reel is ~750 characters ≈ $0.15 of credits, ~$0.30 with retakes. Starter ($6/month, 30k credits) just covers one Reel a day with no retakes; Creator ($22/month) is comfortable. Paid plans include commercial use; the free plan doesn't.
 - **Honest about AI:** it's a narrator, never presented as a teacher or a student. Tick Instagram's "AI info" label when posting, since Meta asks for it on realistic generated audio.
 - Instagram music can be added by hand on top, at low volume.
 
@@ -92,6 +92,8 @@ content/2026-W48/
 3. Fresh phone screenshots for the Thursday posts come from the QA accounts; I'll take them myself.
 
 ## Built so far (2026-11-18)
+
+- **Glow style** (FaFo's pick from a reference Reel, rebuilt in our colours): `engine/motion/src/glow.jsx`. A Reel is just `content/<piece>/script.json` — scenes `hook · stack · list · rows · quiz · sheet`, one subtitle line each; timing follows the subtitles (and later the voice-over). First one: `content/2026-11-in-on-at-reel/` (73 s).
 
 - `engine/motion/`: Remotion project with the **table** format (`content/2026-11-tenses-reel/`) and the **«Как сказать по-английски»** format (`content/2026-11-age-reel/`). Both are silent; voice comes once the ElevenLabs key is in.
 

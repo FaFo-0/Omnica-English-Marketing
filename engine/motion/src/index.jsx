@@ -9,12 +9,15 @@ import {
 } from "remotion";
 import { loadFont as loadInter } from "@remotion/google-fonts/Inter";
 import { loadFont as loadSerif } from "@remotion/google-fonts/PTSerif";
+import { GlowReel, buildTimeline, setGlowFont } from "./glow.jsx";
+import inOnAt from "../../../content/2026-11-in-on-at-reel/script.json";
 
 const { fontFamily: INTER } = loadInter("normal", { weights: ["500", "600", "700", "800"], subsets: ["latin", "cyrillic"] });
 const { fontFamily: SERIF } = loadSerif("italic", { weights: ["400"], subsets: ["latin", "cyrillic"] });
 
 const C = { purple: "#6716A4", yellow: "#FFCA00", cream: "#FFF9ED", ink: "#33253C", lavender: "#EBDDF3", deep: "#391052", white: "#FFFFFF", red: "#D93636", green: "#1F9D55" };
 const FPS = 30;
+setGlowFont(INTER);
 
 // ── helpers ────────────────────────────────────────────────────────────
 const useIn = (at, cfg = { damping: 16, mass: 0.7 }) => {
@@ -198,6 +201,7 @@ const Age = () => {
 const Root = () => (
   <>
     <Composition id="Tenses" component={Tenses} durationInFrames={T.end} fps={FPS} width={1080} height={1920} />
+    <Composition id="InOnAt" component={GlowReel} defaultProps={{ script: inOnAt }} durationInFrames={buildTimeline(inOnAt).total} fps={FPS} width={1080} height={1920} />
     <Composition id="Age" component={Age} durationInFrames={A.end} fps={FPS} width={1080} height={1920} />
   </>
 );

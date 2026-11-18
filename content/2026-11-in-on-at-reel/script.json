@@ -1,0 +1,52 @@
+{
+  "id": "InOnAt",
+  "tag": "IN · ON · AT",
+  "scenes": [
+    { "type": "hook", "chip": "Лайфхак", "glow": "purple",
+      "title": "Как не путать предлоги времени?",
+      "tiles": [["in", "hi"], ["on", "hi"], ["at", "hi"]], "tilesCue": 0,
+      "captions": ["Как не путать предлоги времени? In, on, at.", "Представьте пирамиду."] },
+    { "type": "stack", "chip": "Правило", "glow": "yellow",
+      "levels": [
+        { "word": "at", "note": "точное время" },
+        { "word": "on", "note": "день или дата" },
+        { "word": "in", "note": "год · месяц · время года" }
+      ],
+      "captions": ["Внизу — самое большое: год, месяц, время года. Это in.", "Выше — конкретный день или дата. Это on.", "На вершине — точное время. Это at."] },
+    { "type": "list", "chip": "Примеры", "glow": "purple",
+      "items": [
+        { "ru": "в мае", "en": "in May", "cue": 0 },
+        { "ru": "летом", "en": "in summer", "cue": 0.5 },
+        { "ru": "в понедельник", "en": "on Monday", "cue": 1 },
+        { "ru": "в мой день рождения", "en": "on my birthday", "cue": 1.45 },
+        { "ru": "в семь часов", "en": "at seven", "cue": 2 },
+        { "ru": "в полночь", "en": "at midnight", "cue": 2.5 }
+      ],
+      "captions": ["В мае — in May. Летом — in summer.", "В понедельник — on Monday. В мой день рождения — on my birthday.", "В семь часов — at seven. В полночь — at midnight."] },
+    { "type": "rows", "chip": "Ловушка", "glow": "red",
+      "title": "Части дня",
+      "rows": [
+        { "ru": "утром · вечером", "tiles": [["in", "hi"], ["the"], ["morning"]], "cue": 0.45 },
+        { "ru": "ночью", "tiles": [["at", "bad"], ["night"]], "cue": 1 },
+        { "ru": "в понедельник утром", "tiles": [["on", "ok"], ["Monday"], ["morning"]], "cue": 2.5 }
+      ],
+      "captions": ["Но есть ловушка. Части дня — тоже in: in the morning, in the evening.", "А ночью — at night. Это просто нужно запомнить.", "Если назван день — тогда on, даже утром: on Monday morning."] },
+    { "type": "quiz", "chip": "Проверьте себя", "glow": "green",
+      "title": "«Увидимся в пятницу»",
+      "options": [
+        { "tiles": ["See", "you", "in", "Friday"], "key": "in", "wrong": true },
+        { "tiles": ["See", "you", "on", "Friday"], "key": "on" }
+      ],
+      "countdownCue": 2, "answerCue": 3,
+      "captions": ["Проверьте себя: «увидимся в пятницу».", "In Friday? On Friday?", { "text": "", "len": 90 }, "On Friday — потому что это день."] },
+    { "type": "sheet", "glow": "yellow",
+      "title": "Шпаргалка",
+      "rows": [
+        ["in", "год · месяц · время года", "the morning · the evening"],
+        ["on", "день недели · дата", "Monday morning"],
+        ["at", "точное время", "night · midnight"]
+      ],
+      "cta": ["Сохраните шпаргалку", "Отправьте тому, кто учит английский", "Когда у вас день рождения? Ответьте по-английски"],
+      "captions": ["Сохраните шпаргалку и отправьте тому, кто учит английский.", { "text": "А в комментариях напишите по-английски, когда у вас день рождения.", "tail": 45 }] }
+  ]
+}
