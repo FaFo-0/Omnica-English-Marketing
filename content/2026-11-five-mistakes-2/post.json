@@ -1,0 +1,112 @@
+{
+  "format": "post",
+  "slides": [
+    {
+      "id": "1",
+      "bg": "purple",
+      "title": [
+        "Ещё 5 ошибок,",
+        "которые часто делают",
+        "русскоязычные"
+      ],
+      "accent": [
+        "Часть 2. Проверьте себя."
+      ],
+      "visual": {
+        "type": "mistake",
+        "wrong": "I very like English.",
+        "right": "I really like English."
+      }
+    },
+    {
+      "id": "2",
+      "bg": "cream",
+      "title": [
+        "1. «Мама тоже не…»"
+      ],
+      "visual": {
+        "type": "mistake",
+        "wrong": "My mom too doesn’t know.",
+        "right": "My mom doesn’t know either.",
+        "why": "В отрицании «тоже» — это either, и оно стоит в конце."
+      }
+    },
+    {
+      "id": "3",
+      "bg": "cream",
+      "title": [
+        "2. «Люблю гулять»"
+      ],
+      "visual": {
+        "type": "mistake",
+        "wrong": "I like go to the mountains.",
+        "right": "I like going to the mountains.",
+        "why": "После like — глагол с -ing: going. Можно и to go."
+      }
+    },
+    {
+      "id": "4",
+      "bg": "cream",
+      "title": [
+        "3. «Очень молодой»"
+      ],
+      "visual": {
+        "type": "mistake",
+        "wrong": "I was very younger.",
+        "right": "I was very young.",
+        "why": "После very — обычная форма прилагательного, без -er."
+      }
+    },
+    {
+      "id": "5",
+      "bg": "cream",
+      "title": [
+        "4. «Мне нужно показать»"
+      ],
+      "visual": {
+        "type": "mistake",
+        "wrong": "I need show you something.",
+        "right": "I need to show you something.",
+        "why": "После need ставим to перед глаголом."
+      }
+    },
+    {
+      "id": "6",
+      "bg": "cream",
+      "title": [
+        "5. «Делать фото»"
+      ],
+      "visual": {
+        "type": "mistake",
+        "wrong": "We made a lot of photos.",
+        "right": "We took a lot of photos.",
+        "why": "Фотографии по-английски «берут»: take photos."
+      }
+    },
+    {
+      "id": "7",
+      "bg": "yellow",
+      "title": [
+        "Такие ошибки мы",
+        "находим в вашей речи"
+      ],
+      "accent": [
+        "после урока."
+      ],
+      "body": [
+        "С разбором по-русски.",
+        "Напишите нам — ссылка в профиле."
+      ],
+      "visual": {
+        "type": "screenshot",
+        "src": "library/screenshots/2026-11-14-mistakes-ru/01-mistakes-card.jpg",
+        "cssWidth": 366,
+        "crop": [
+          0,
+          228
+        ],
+        "width": 780
+      }
+    }
+  ]
+}
