@@ -7,13 +7,19 @@
 Omnica English | Английский для взрослых
 ```
 
-**Bio:** proposed, not applied yet. The current first line «Английский 1 на 1, который не забудется» reads awkwardly and mixes the US and UK flags.
+**Bio** (technology positioning, 2026-11-22; 150-character limit):
 ```
 Английский онлайн 1 на 1 с преподавателем
-Слова с урока — сразу в ваших карточках
-Бесплатная библиотека для чтения
++ технология, которая ничего не забывает:
+слова, ваши ошибки, домашка — в кабинете
 Запишитесь на пробный урок 👇
 ```
+
+**Caption closing line** (end of every post, before the hashtags):
+```
+Omnica English — преподаватель + технология, которая ничего не забывает.
+```
+
 
 **Category:** Education
 

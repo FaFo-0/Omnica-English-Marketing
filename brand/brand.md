@@ -1,5 +1,19 @@
 # Omnica English — brand
 
+## Positioning (FaFo, 2026-11-22)
+
+**Omnica English is a technology-powered English academy: a real teacher + technology that never forgets.**
+- RU line: «Преподаватель + технология, которая ничего не забывает»
+- EN line: "A real teacher + technology that never forgets"
+- Use it in the bio, as a closing line in captions, and as the angle of new posts and ads.
+
+How to talk about the technology:
+- **Benefit, not buzzword.** Say what it does for the learner: your words, your mistakes and your homework are kept and explained, so you don't forget. Avoid empty "AI-powered", «умная платформа», «нейросеть учит вас».
+- **Stay truthful.** The platform finds speaking mistakes and the teacher confirms each one. Words from the lesson go to flashcards with a translation and an example. Homework is checked by the teacher. Never imply an AI replaces the teacher, or that people learn "with AI" instead of a person.
+- **The teacher stays first.** "One-to-one with a real teacher" always comes before the technology.
+- **Strongest proof:** the mistakes finder («Разбор ваших ошибок»). Lead with it when there's room for only one example.
+- **Founder content:** Mustafa is the founder. Don't present him, or any teacher, as a native speaker unless it's true.
+
 ## Colors
 
 | Name | Hex | Use |
