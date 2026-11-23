@@ -10,6 +10,14 @@ Based on Sergio Cardenas's method ("How to Scale Facebook Ads on a Low Budget (P
 ## The core idea
 Since the Andromeda update, Meta uses the **creative itself** as targeting. The popular advice is "launch 15–20 creatives and let the AI pick", and that only works at $1,000+/day. **On a small budget Meta pours 80–90% of the spend into 1–2 ads, the rest get cents, and they never prove anything.** So we decide where every dollar goes: test fairly, keep the 2–5 winners, cut the rest ("cut the fat"), then build the next test on proven winners.
 
+## Our method (FaFo, 2026-11-23)
+FaFo's brother runs his school this way (about 150 students), and FaFo chose it for Omnica:
+- **Meta Ads Manager** through a Facebook Page and an ad account, not "Boost" from Instagram.
+- **The website is the destination.** Ads send people to `omnicaenglish.com/?lang=ru`; they read the offers there and message FaFo from the site (WhatsApp / Telegram) or sign up.
+- **The Meta Pixel** on the website measures page views, taps on WhatsApp/Telegram/«Записаться», and sign-ups. A new Pixel has no history, so start by optimizing for landing-page views and switch to a conversion event (Contact / Lead) once it has a few dozen.
+- Creatives to start with: the Mustafa ad and Sally's Reel, maybe a third.
+- Still measure **cost per trial booked**, not clicks.
+
 ## Step 1: Creative test (CT)
 - **One campaign, budget at campaign level (CBO), broad targeting.** No interests: the only variable is the creative.
   - Omnica: Kazakhstan (or the tested country), Russian, adults. Keep Advantage+ audience on, unless leads skew to the wrong ages.
@@ -50,5 +58,5 @@ Only after winners are proven: raise the budget **10–20% every 2–3 days**, a
 
 ## History
 - **2026-11-20: Ad 1.** Sally's Reel boosted from Instagram, WhatsApp messages, Kazakhstan 22–45 (Advantage+ on), $9/day × 6 days. Day 1: $6.57, reach 357 (CPM ≈ $18), 36% hook rate, 1 conversation (a job seeker), 36% of viewers aged 45+. This is our creative #1 baseline. Next: a creative test with 3–4 learner-facing creatives at an equal impression cap.
-- **2026-11-22: Ad 1 paused by FaFo** at $11.06: 654 views, reach 599 (CPM ≈ $18), hook rate 33% (214 of 654), 2 conversations at $5.53 each (one job seeker; one real enquiry, «можно узнать подробнее», on Instagram Direct, no reply yet), 1 follow, 0 trials booked. Below the 1,000-impression minimum, so it's a weak read. Takeaways: the opening loses two-thirds of viewers in the first 3 seconds, and the teacher-centred video attracted a job seeker. Next: a creative test with learner-facing hooks (Mustafa ad, ex-"founder ad", hook B «Делаете одни и те же ошибки…»; Sally with a new hook; a «5 ошибок» Reel; a screen demo), equal impression caps.
+- **2026-11-22: Ad 1 paused by FaFo** at $11.06: 654 views, reach 599 (CPM ≈ $18), hook rate 33% (214 of 654), 2 conversations at $5.53 each (one job seeker; one real enquiry, «можно узнать подробнее», on Instagram Direct, no reply yet), 1 follow, 0 trials booked. Below the 1,000-impression minimum, so it's a weak read. Takeaways: the opening loses two-thirds of viewers in the first 3 seconds, and the teacher-centred video attracted a job seeker. Next: a creative test with learner-facing hooks (Mustafa ad; Sally with a new hook; a «5 ошибок» Reel; a screen demo), equal impression caps.
 - **2026-11-23: Ad 1 stopped** (resumed, then hit the stop rule). Final: $16.87, reach 786, 931 views (CPM ≈ $21), hook rate 31%, 2 conversations (both on day 1) = $8.44 each (above the $8 limit), 12 profile visits, 2 follows, 0 trials. Organic reach of the same Reel (friends' shares) did better than paid. **Verdict:** a teacher-introduction video works organically, among people who trust the sharer, but not as cold paid traffic. No more paid spend until new learner-facing creatives exist. Benchmark for Kazakhstan: about $5–8 per conversation started.
