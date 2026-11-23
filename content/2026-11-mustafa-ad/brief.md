@@ -3,14 +3,14 @@
 **Status:** script v3 approved, 2026-11-23. FaFo records next. Based on the first "founder ad" script (FaFo liked it best), with the founder line removed.
 **Goal:** ad creative #2 (with Sally's Reel) for FaFo's chosen method: Ads Manager → website with the Meta Pixel (see `.claude/skills/meta-ads-small-budget`, "Our method"). Also posted as an organic Reel.
 **Format:** one video, vertical, about 22 s. Mustafa speaks English to camera, slowly, with burned-in **Russian subtitles** in brand colors. Plain background, no recognisable location.
-**Focus:** the technology + speaking lessons. It opens on the platform, not with a classic hook.
+**Focus:** the technology + speaking lessons. **It opens on Mustafa's face** (FaFo, 2026-11-23); the first line is about the technology.
 **Mustafa's role:** name only. Not "founder", "owner" or "teacher". Don't imply he's a native speaker.
 
 ## Script
 
 | | English (spoken) | Russian subtitle | Picture |
 |---|---|---|---|
-| 1 | Your teacher can't remember every mistake you make. Our technology can. | Преподаватель не может запомнить каждую вашу ошибку. А наша технология — может. | Opens on `v1-mistakes-scroll.mp4` (the mistakes card), Mustafa's voice. Cut to Mustafa on «Our technology can». |
+| 1 | Your teacher can't remember every mistake you make. Our technology can. | Преподаватель не может запомнить каждую вашу ошибку. А наша технология — может. | Opens on Mustafa, close and looking into the lens. On «Our technology can», the mistakes card (`v1-mistakes-scroll.mp4`) slides up beside or below him for about 2 s. |
 | 2 | I'm Mustafa, from Omnica English. | Я Мустафа, Omnica English. | Mustafa |
 | 3 | Here, you practise speaking one-on-one, with foreign teachers. | Здесь вы практикуете разговорный английский один на один с иностранными преподавателями. | Mustafa |
 | 4 | And after every lesson, our platform keeps everything: your mistakes, your new words, your homework. | А после каждого урока платформа сохраняет всё: ваши ошибки, новые слова, домашку. | Quick inserts: `v2-mistake-practice.mp4` → `v3-word-flashcard.mp4` → `07-homework-checked.png` |
