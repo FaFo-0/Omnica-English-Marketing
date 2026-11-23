@@ -10,12 +10,14 @@
 
 | | English (spoken) | Russian subtitle | Picture |
 |---|---|---|---|
-| 1 | Your teacher can't remember every mistake you make. Our technology can. | Преподаватель не может запомнить каждую вашу ошибку. А наша технология — может. | Opens on the phone screen: mistakes card (QA account), Mustafa's voice. Cut to Mustafa on «Our technology can». |
+| 1 | Your teacher can't remember every mistake you make. Our technology can. | Преподаватель не может запомнить каждую вашу ошибку. А наша технология — может. | Opens on `v1-mistakes-scroll.mp4` (the mistakes card), Mustafa's voice. Cut to Mustafa on «Our technology can». |
 | 2 | I'm Mustafa, from Omnica English. | Я Мустафа, Omnica English. | Mustafa |
 | 3 | Here, you practise speaking one-on-one, with foreign teachers. | Здесь вы практикуете разговорный английский один на один с иностранными преподавателями. | Mustafa |
-| 4 | And after every lesson, our platform keeps everything: your mistakes, your new words, your homework. | А после каждого урока платформа сохраняет всё: ваши ошибки, новые слова, домашку. | Quick screen inserts: mistakes card → flashcards → homework |
+| 4 | And after every lesson, our platform keeps everything: your mistakes, your new words, your homework. | А после каждого урока платформа сохраняет всё: ваши ошибки, новые слова, домашку. | Quick inserts: `v2-mistake-practice.mp4` → `v3-word-flashcard.mp4` → `07-homework-checked.png` |
 | 5 | So you don't forget. You keep improving. | Поэтому вы не забываете — а продолжаете расти. | Mustafa |
 | CTA | Tap the link to see how it works, and book a trial lesson. | Нажмите на ссылку — посмотрите, как это работает, и запишитесь на пробный урок. | End card: «Пробный урок» + omnicaenglish.com |
+
+Screen inserts: `library/screenshots/2026-11-23-practice-ru/`.
 
 ## Recording
 - One take per line, a 1-second pause before and after, eyes on the lens.
