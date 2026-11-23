@@ -1,5 +1,7 @@
 # Post: the speaking mistakes finder
 
+**Posted:** on Instagram by 2026-11-23 (24 views).
+
 **Status:** draft, copy and design together (FaFo asked to move fast). Waiting for FaFo's feedback, 2026-11-14.
 **Goal:** show the feature no one else has: after a lesson you see your own spoken mistakes, checked by a teacher and explained in Russian. Then send people to a trial.
 **Format:** feed carousel, 5 slides at 1080 × 1350 (`slides/`). Source: `post.json`, rendered with `templates/story/render.cjs`.

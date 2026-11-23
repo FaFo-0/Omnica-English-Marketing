@@ -1,5 +1,7 @@
 # Post: 5 more mistakes (part 2)
 
+**Posted:** on Instagram by 2026-11-23 (11 views).
+
 **Status:** draft, 2026-11-20. Purple cover so it doesn't repeat the yellow part 1 in the grid.
 **Privacy:** the patterns come from a real lesson, but every sentence is rewritten. No student's words or story appear.
 **Format:** feed carousel, 7 slides (`slides/`). Source: `post.json`.

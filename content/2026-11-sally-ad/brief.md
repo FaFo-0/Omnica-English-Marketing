@@ -1,5 +1,7 @@
 # Sally ad
 
+**Posted:** as a Reel and run as Ad 1 (results in the ads skill). 1,995 views by 2026-11-23.
+
 **Status:** recording 2026-11-09. Edit together afterwards, then post as a Reel and run as a paid ad.
 
 **Goal:** get people to book a trial lesson (paid ad). Organic Reel version: show how learning between lessons works.

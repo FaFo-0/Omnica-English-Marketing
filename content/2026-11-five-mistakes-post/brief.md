@@ -1,5 +1,7 @@
 # Post: 5 mistakes Russian speakers often make
 
+**Posted:** on Instagram by 2026-11-23 (43 views).
+
 **Status:** draft, 2026-11-14, waiting for FaFo's feedback.
 **Goal:** a value post people save and share: they learn something even if they never sign up. The last slide connects it to the mistakes finder and the trial.
 **Format:** feed carousel, 7 slides at 1080 × 1350 (`slides/`), yellow cover. Source: `post.json`.

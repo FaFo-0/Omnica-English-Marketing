@@ -31,12 +31,23 @@ Omnica English — преподаватель + технология, котор
 
 ## Grid
 
-| Date | Post | Status |
-|---|---|---|
-| 2026-10 | Intro carousel «Урок закончился. Практика — продолжается.» (`archive/2026-10-intro-carousel/`) | Live. Rewrite the caption (too generic and AI-sounding; also shows 1 500 ₸). Slide 7 has the price printed on it, so it needs replacing. Pin it. |
-| 2026-11 | Sally ad, as a Reel (`content/2026-11-sally-ad/`) | Recording tomorrow |
+Profile check, 2026-11-23: 5 posts, 15 followers, 2.2K views in 30 days. Highlights live (Старт, Уроки, Библиотека, …).
 
-Before ads drive traffic: the profile needs highlights and at least 3 posts.
+| Posted | Post | Views (2026-11-23) | Notes |
+|---|---|---|---|
+| 2026-10 | Intro carousel «Урок закончился. Практика — продолжается.» (`archive/2026-10-intro-carousel/`) | 26 | Pinned. Caption and slide 7 (price) still need replacing. |
+| 2026-11 | Mistakes finder carousel (`content/2026-11-mistakes-post/`) | 24 | |
+| 2026-11 | 5 mistakes, part 1 (`content/2026-11-five-mistakes-post/`) | 43 | |
+| 2026-11 | Sally Reel (`content/2026-11-sally-ad/`) | 1,995 | Includes paid views (Ad 1) and friends' shares. Cover text is hidden under the view counter. |
+| 2026-11 | 5 mistakes, part 2 (`content/2026-11-five-mistakes-2/`) | 11 | |
+
+**What the numbers say:** with this few followers, carousels reach only followers (11–43 views) and Reels reach strangers (about 50× more). Until the account has a few hundred followers, most new posts should be Reels. Carousels still convince visitors who arrive from a Reel or an ad.
+
+**Next:**
+- Post the free-library carousel (it's ready) so the grid has 6 posts and the second row is full.
+- Pin the Sally Reel, 5 mistakes part 1, and the mistakes finder.
+- Mix in faces. The grid is 4 text cards and 1 person, so alternate a face with a tip card.
+- Reel covers: keep text in the top two-thirds, clear of the view counter.
 
 ## Highlights
 

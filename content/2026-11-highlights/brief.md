@@ -1,5 +1,7 @@
 # Instagram highlights (remake)
 
+**Posted:** highlights live on the profile by 2026-11-23.
+
 **Status:** step 4, designed 2026-11-09 and waiting for FaFo's feedback. Copy approved the same day (prices removed, Teachers made general, About dropped).
 **Update 2026-11-14:** the speaking-mistakes finder is added. Старт 1-2 now has 4 steps («Ваши ошибки — с разбором» added). Уроки has a new story 2-2 «Ваши ошибки из урока — *с разбором по-русски.* Преподаватель проверяет каждую.» with the real mistakes screenshot; Уроки is now 2-1 … 2-5 (CTA is 2-5). 20 Stories in total.
 **Files:** `stories/` (19 PNGs, 1080 × 1920), `covers/` (5 PNGs), `stories.json` (the source; re-render with `templates/story/render.cjs`).

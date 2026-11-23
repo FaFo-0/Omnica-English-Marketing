@@ -12,7 +12,7 @@ How to talk about the technology:
 - **Stay truthful.** The platform finds speaking mistakes and the teacher confirms each one. Words from the lesson go to flashcards with a translation and an example. Homework is checked by the teacher. Never imply an AI replaces the teacher, or that people learn "with AI" instead of a person.
 - **The teacher stays first.** "One-to-one with a real teacher" always comes before the technology.
 - **Strongest proof:** the mistakes finder («Разбор ваших ошибок»). Lead with it when there's room for only one example.
-- **Founder content:** Mustafa is the founder. Don't present him, or any teacher, as a native speaker unless it's true.
+- **Mustafa on camera:** he introduces himself by name only. Don't call him the founder, the owner or a teacher in public content (FaFo, 2026-11-23). Don't present him, or any teacher, as a native speaker unless it's true.
 
 ## Colors
 
