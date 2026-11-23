@@ -1,6 +1,6 @@
 # Mustafa ad: the technology behind our speaking lessons
 
-**Status:** script v3, 2026-11-23, waiting for FaFo's OK. Based on the first "founder ad" script (FaFo liked it best), with the founder line removed.
+**Status:** script v3 approved, 2026-11-23. FaFo records next. Based on the first "founder ad" script (FaFo liked it best), with the founder line removed.
 **Goal:** ad creative #2 (with Sally's Reel) for FaFo's chosen method: Ads Manager → website with the Meta Pixel (see `.claude/skills/meta-ads-small-budget`, "Our method"). Also posted as an organic Reel.
 **Format:** one video, vertical, about 22 s. Mustafa speaks English to camera, slowly, with burned-in **Russian subtitles** in brand colors. Plain background, no recognisable location.
 **Focus:** the technology + speaking lessons. It opens on the platform, not with a classic hook.
@@ -23,6 +23,9 @@
 - Also record 5–10 s of silent footage at a laptop to use under the screen inserts.
 - Send the clips. Claude edits: cuts, Russian subtitles, screen inserts, end card.
 
-## Facts to confirm before it runs
-- **"Foreign teachers":** keep it only if a new trial student actually gets a teacher from abroad. If not, say "with teachers from different countries".
-- **The CTA needs the website ready:** the Meta Pixel is not on omnicaenglish.com yet.
+## Facts confirmed (FaFo, 2026-11-23)
+- **"Foreign teachers":** true; trial students can get one.
+- **Mustafa on camera:** FaFo is fine with it legally.
+
+## Before it runs
+- The Meta Pixel is not on omnicaenglish.com yet. It needs FaFo's Pixel ID.
