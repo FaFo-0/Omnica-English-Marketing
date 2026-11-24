@@ -1,6 +1,6 @@
 # Post: the free library
 
-**Status:** draft, 2026-11-14, waiting for FaFo's feedback. The first slide is yellow, as FaFo asked.
+**Status:** approved for posting 2026-11-24 (caption in `caption.ru.txt`). The first slide is yellow, as FaFo asked.
 **Goal:** the free way in. People who aren't ready to pay can sign up and read for free, and they meet the platform, the flashcards and later the trial. It's a softer call to action than the mistakes post.
 **Format:** feed carousel, 5 slides at 1080 × 1350 (`slides/`). Source: `post.json`. Screens: `library/screenshots/2026-11-09-phone-ru/` (QA student).
 
